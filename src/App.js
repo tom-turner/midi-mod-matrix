@@ -45,7 +45,7 @@ function App() {
   WebMidi
     .enable()
     .then(onEnabled)
-    .catch(err => alert(err));
+    .catch(err => alert(`Error: ${err}`));
 
   return (
     <div className="h-screen w-full bg-stone-100 flex-col p-4 overflow-hidden">
