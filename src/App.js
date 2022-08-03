@@ -48,7 +48,7 @@ function App() {
     .catch(err => alert(`Error: ${err}`));
 
   return (
-    <div className="h-screen w-full bg-stone-100 flex-col p-4 overflow-hidden">
+    <div className="h-screen w-full bg-stone-100 flex-col p-4 overflow-scroll">
       <div className="flex justify-between">
         <h1 className="text-2xl font-bold">Midi Mod Matrix by Tom Turner</h1>
         <button className="border border-black px-2 py-1 rounded" onClick={ () => { document.location.reload() } } > v0.1 Refresh </button>
@@ -59,14 +59,14 @@ function App() {
         </p>
         <br/>
         <p>
-          The Midi Mod Matrix is currently limited to CC messages and messages must be learnt from an incoming message, but I plan to expand this to include everything in the midi table with a select option. I also hope to add LFOs and envelope utilities to use as sources or as modifiers for midi messages, plus provide additional routing and manipulation of control messages to gain access to new modulation capabilities for your instruments.
+          The Midi Mod Matrix is currently limited to CC messages and commands must be learnt from an incoming message, but I plan to expand this to include everything in the midi table with a select option. I also hope to add LFOs and envelope utilities to use as sources or as modifiers for midi messages, plus provide additional routing and manipulation of control messages to gain access to new modulation capabilities for your instruments.
         </p>
         <br/>
         <p>  
           Please let me know if this is something you would like to see more development into, even just a thumbs up helps! If you like this idea, would like to support it or to give me feedback, you can email me at <a className="underline cursor-pointer" onClick={ () => window.location.href = 'mailto:tom.turner@live.co.uk'}> tom.turner@live.co.uk. </a>
         </p>
       </div>
-      <div className="flex flex-col lg:flex-row py-4 lg:space-x-4 space-y-4 lg:space-y-0">
+      <div className="flex flex-col lg:flex-row py-4 lg:space-x-4 space-y-4 lg:space-y-0 ">
         <Matrix devices={devices} className="flex w-full border border-black rounded" />
       </div>
       <Viewer devices={devices} />
