@@ -55,11 +55,11 @@ function App() {
       </div>
       <div className="py-2 flex flex-col">
         <p>
-          Ever wanted to linearly control the slop of your Dave Smith Prophet 6 using its mod wheel? Or control an instrument's cutoff filter from another? Well, now you can. Welcome to the Midi Mod Matrix. This simple app lets you route midi control messages between instruments or even between parameters on the same instrument, giving midi instruments endless new possibilities.
+          Ever wanted to linearly control the slop of your Dave Smith Prophet 6 using its mod wheel? Or control an instrument's cutoff filter from another? Well, now you can. Welcome to the Midi Mod Matrix. This simple app lets you route midi control messages between instruments or even between parameters on the same instrument, giving midi instruments some new possibilities.
         </p>
         <br/>
         <p>
-          The Midi Mod Matrix is currently limited to CC messages and messages must be learnt from an incoming message, but I plan to expand this to include everything in the midi table with a select option. I also hope to add LFOs and envelope utilities to use as sources or as modifiers for midi messages, plus provide additional routing and manipulation of control messages to gain access to new modulation capabilities for your instruments, giving them a new life.
+          The Midi Mod Matrix is currently limited to CC messages and messages must be learnt from an incoming message, but I plan to expand this to include everything in the midi table with a select option. I also hope to add LFOs and envelope utilities to use as sources or as modifiers for midi messages, plus provide additional routing and manipulation of control messages to gain access to new modulation capabilities for your instruments.
         </p>
         <br/>
         <p>  
